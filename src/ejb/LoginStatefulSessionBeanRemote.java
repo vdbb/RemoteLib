@@ -5,7 +5,7 @@
  */
 package ejb;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 import javax.ejb.Remote;
 
 /**
@@ -21,7 +21,7 @@ public interface LoginStatefulSessionBeanRemote {
     
     public void setEmail(String newEmail);
     
-    public void setBirthdate(Date newBirthdate);
+    public void setBirthdate(LocalDateTime newBirthdate);
     
     public void login(String name, String password);
     
